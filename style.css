@@ -1,0 +1,29 @@
+.family_names {
+    color:white;
+    font-weight: 900 !important;
+    text-shadow: gray 2px 3px;
+}
+
+body{
+    background-color: lightblue;
+    color: white;
+}
+
+.family_names button {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: springgreen;
+}
+
+#Webcam_Live_View{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}
+
+#Webcam_Captured-Photo {
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}

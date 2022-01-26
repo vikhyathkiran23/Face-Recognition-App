@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Face Recogniser
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>
+            Family Relation Recognition App
+        </h1>
+        <p style="font-weight: bold;">This model can recognise:</p>
+        <b class="family_names">
+            <button>
+                Father
+            </button>
+            <br>
+            <br>
+            <button>
+                Son
+            </button>
+            <br>
+            <br>
+            <button>
+                Mother
+            </button>
+            <br>
+            <br>
+        </b>
+
+        <div id="Webcam_Live_View"></div>
+        <br>
+        <button onclick="takeSnapshot()" class="btn btn-primary">Take Photo</button>
+        <br>
+        <div id="Webcam_Captured-Photo"></div>
+        <br>
+        <button onclick="Check()" class="btn btn-primary">Identify Member</button>
+        <br>
+        <label>Family Member: <span id="Result_Member"></span></label>
+        <br>
+        <label>Accuracy: <span id="Result_Accuracy"></span></label>
+
+
+    </center>
+</body>
+<script src="main.js"></script>
+
+</html>
